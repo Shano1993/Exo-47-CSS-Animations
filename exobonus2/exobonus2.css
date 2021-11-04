@@ -39,8 +39,37 @@
 #helice {
     animation-name: rotHelice;
     animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotHelice {
-
+    0% {
+        transform-origin: 50% 29%;
+        transform: rotate(360deg);
+    }
+    20% {
+        transform-origin: 50% 29%;
+        transform: rotate(720deg);
+    }
+    40% {
+        transform-origin: 50% 29%;
+        transform: rotate(1080deg);
+    }
+    45% {
+        transform-origin: 50% 29%;
+        transform: rotate(1440deg);
+    }
+    60% {
+        transform-origin: 50% 29%;
+        transform: rotate(1800deg);
+    }
+    80% {
+        transform-origin: 50% 29%;
+        transform: rotate(2160deg);
+    }
+    100% {
+        transform-origin: 50% 29%;
+        transform: rotate(2520deg);
+    }
 }

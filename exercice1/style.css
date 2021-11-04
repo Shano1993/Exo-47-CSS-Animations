@@ -2,7 +2,6 @@
     width: 250px;
     height: 250px;
     background: red;
-
     animation-name : foo-animation;
     animation-duration : 8s;
     animation-fill-mode : forwards;
@@ -35,8 +34,6 @@
     }
 }
 
-
-
 #bar {
     width: 85px;
     height: 85px;
@@ -44,4 +41,43 @@
     position: absolute;
     left: 500px;
     top: 25px;
+    animation-name : bar-animation;
+    animation-duration : 3s;
+    animation-delay: 500ms;
+    animation-fill-mode : backwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;
+}
+
+@keyframes bar-animation {
+    10% {
+        background: lightgray;
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+    }
+    30% {
+        background: red;
+        width: 115px;
+        height: 115px;
+        transform: rotate(90deg);
+    }
+    50%{
+        background: black;
+        width: 100px;
+        height: 100px;
+        transform: rotate(180deg);
+    }
+    75% {
+        background: blue;
+        width: 85px;
+        height: 85px;
+        transform: rotate(-270deg);
+    }
+    100% {
+        background: yellow;
+        width: 70px;
+        height: 70px;
+        transform: rotate(-360deg);
+    }
 }
